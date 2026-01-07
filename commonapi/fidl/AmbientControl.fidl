@@ -1,0 +1,41 @@
+package ambientcontrol
+
+interface AmbientControl {
+    version { major 1 minor 0 }
+    
+    // ═══════════════════════════════════════════════════════════
+    // RPC Methods (Query current state)
+    // ═══════════════════════════════════════════════════════════
+    
+    // Get current ambient color (hex format, e.g., "#27ae60")
+    method getAmbientColor {
+        out {
+            String color           // Hex color string (e.g., "#27ae60")
+        }
+    }
+    
+    // Get current brightness (0.0 - 1.0)
+    method getBrightness {
+        out {
+            Float brightness       // Brightness value (0.0 = dark, 1.0 = bright)
+        }
+    }
+    
+    // ═══════════════════════════════════════════════════════════
+    // Broadcast Events (State changes)
+    // ═══════════════════════════════════════════════════════════
+    
+    // Broadcast when ambient color changes (from gear or user selection)
+    broadcast ambientColorChanged {
+        out {
+            String newColor        // New color in hex format (e.g., "#3498db")
+        }
+    }
+    
+    // Broadcast when brightness changes (from slider or volume)
+    broadcast brightnessChanged {
+        out {
+            Float newBrightness    // New brightness value (0.0 - 1.0)
+        }
+    }
+}

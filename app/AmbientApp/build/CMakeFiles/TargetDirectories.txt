@@ -1,0 +1,8 @@
+/home/jetson/leo/DES_Head-Unit/app/AmbientApp/build/CMakeFiles/AmbientApp.dir
+/home/jetson/leo/DES_Head-Unit/app/AmbientApp/build/CMakeFiles/edit_cache.dir
+/home/jetson/leo/DES_Head-Unit/app/AmbientApp/build/CMakeFiles/rebuild_cache.dir
+/home/jetson/leo/DES_Head-Unit/app/AmbientApp/build/CMakeFiles/list_install_components.dir
+/home/jetson/leo/DES_Head-Unit/app/AmbientApp/build/CMakeFiles/install.dir
+/home/jetson/leo/DES_Head-Unit/app/AmbientApp/build/CMakeFiles/install/local.dir
+/home/jetson/leo/DES_Head-Unit/app/AmbientApp/build/CMakeFiles/install/strip.dir
+/home/jetson/leo/DES_Head-Unit/app/AmbientApp/build/CMakeFiles/AmbientApp_autogen.dir

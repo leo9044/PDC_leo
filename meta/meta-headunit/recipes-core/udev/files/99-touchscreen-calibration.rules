@@ -1,0 +1,4 @@
+# Waveshare WS170120 touchscreen calibration for 1024x600 display
+# Set libinput calibration matrix
+
+SUBSYSTEM=="input", ATTRS{name}=="WaveShare WS170120", ENV{LIBINPUT_CALIBRATION_MATRIX}="1 0 0 0 1 0"

@@ -1,0 +1,33 @@
+{
+	"BUILD_DIR" : "/home/jetson/leo/DES_Head-Unit/app/MediaApp/build/MediaApp_autogen",
+	"CMAKE_BINARY_DIR" : "/home/jetson/leo/DES_Head-Unit/app/MediaApp/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/jetson/leo/DES_Head-Unit/app/MediaApp/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/jetson/leo/DES_Head-Unit/app/MediaApp",
+	"CMAKE_SOURCE_DIR" : "/home/jetson/leo/DES_Head-Unit/app/MediaApp",
+	"INCLUDE_DIR" : "/home/jetson/leo/DES_Head-Unit/app/MediaApp/build/MediaApp_autogen/include",
+	"INPUTS" : 
+	[
+		"/home/jetson/leo/DES_Head-Unit/app/MediaApp/qml/MediaApp.qml",
+		"/home/jetson/leo/DES_Head-Unit/app/MediaApp/images/refresh.svg",
+		"/home/jetson/leo/DES_Head-Unit/app/MediaApp/images/pause.svg",
+		"/home/jetson/leo/DES_Head-Unit/app/MediaApp/images/arrow.svg",
+		"/home/jetson/leo/DES_Head-Unit/app/MediaApp/images/forward.png",
+		"/home/jetson/leo/DES_Head-Unit/app/MediaApp/images/forward.svg",
+		"/home/jetson/leo/DES_Head-Unit/app/MediaApp/images/start.png",
+		"/home/jetson/leo/DES_Head-Unit/app/MediaApp/images/backward.png",
+		"/home/jetson/leo/DES_Head-Unit/app/MediaApp/images/start.svg",
+		"/home/jetson/leo/DES_Head-Unit/app/MediaApp/images/backward.svg",
+		"/home/jetson/leo/DES_Head-Unit/app/MediaApp/images/refresh.png",
+		"/home/jetson/leo/DES_Head-Unit/app/MediaApp/images/pause.png"
+	],
+	"LOCK_FILE" : "/home/jetson/leo/DES_Head-Unit/app/MediaApp/build/CMakeFiles/MediaApp_autogen.dir/AutoRcc_qml_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "qml" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_qml.cpp",
+	"RCC_EXECUTABLE" : "/usr/lib/qt5/bin/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/jetson/leo/DES_Head-Unit/app/MediaApp/build/CMakeFiles/MediaApp_autogen.dir/AutoRcc_qml_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/home/jetson/leo/DES_Head-Unit/app/MediaApp/qml.qrc",
+	"VERBOSITY" : 0
+}

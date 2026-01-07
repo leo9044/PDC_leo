@@ -1,0 +1,8 @@
+/home/jetson/leo/DES_Head-Unit/app/MediaApp/build/CMakeFiles/MediaApp.dir
+/home/jetson/leo/DES_Head-Unit/app/MediaApp/build/CMakeFiles/edit_cache.dir
+/home/jetson/leo/DES_Head-Unit/app/MediaApp/build/CMakeFiles/rebuild_cache.dir
+/home/jetson/leo/DES_Head-Unit/app/MediaApp/build/CMakeFiles/list_install_components.dir
+/home/jetson/leo/DES_Head-Unit/app/MediaApp/build/CMakeFiles/install.dir
+/home/jetson/leo/DES_Head-Unit/app/MediaApp/build/CMakeFiles/install/local.dir
+/home/jetson/leo/DES_Head-Unit/app/MediaApp/build/CMakeFiles/install/strip.dir
+/home/jetson/leo/DES_Head-Unit/app/MediaApp/build/CMakeFiles/MediaApp_autogen.dir
