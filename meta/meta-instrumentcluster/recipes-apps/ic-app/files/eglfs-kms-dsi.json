@@ -1,0 +1,12 @@
+{
+  "device": "/dev/dri/card1",
+  "outputs": [
+    {
+      "name": "DSI-1",
+      "mode": "400x1280",
+      "format": "argb8888",
+      "physicalWidth": 52,
+      "physicalHeight": 167
+    }
+  ]
+}

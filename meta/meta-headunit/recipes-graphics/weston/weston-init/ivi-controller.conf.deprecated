@@ -1,0 +1,30 @@
+# Weston IVI Controller Configuration
+# Routes IVI surfaces to specific outputs
+
+# Surface IDs (must match application configuration)
+# HU_MainApp compositor: surface ID 1000
+# IC_app: surface ID 2000
+
+# Layer IDs
+# Layer 1000: HDMI display layer
+# Layer 2000: DSI display layer
+
+[ivi-controller]
+# Configure layers and surfaces
+# Layers are collections of surfaces that map to outputs
+
+# Layer 1000 - HDMI Output (Head Unit)
+layer.1000.surface=1000
+layer.1000.output=HDMI-A-1
+layer.1000.x=0
+layer.1000.y=0
+layer.1000.width=1024
+layer.1000.height=600
+
+# Layer 2000 - DSI Output (Instrument Cluster)
+layer.2000.surface=2000
+layer.2000.output=DSI-1
+layer.2000.x=0
+layer.2000.y=0
+layer.2000.width=400
+layer.2000.height=1280

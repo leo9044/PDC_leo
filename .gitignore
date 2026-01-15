@@ -1,0 +1,14 @@
+.claude
+.vscode
+*.user
+*build# Yocto build artifacts
+oe-logs/
+oe-workdir/
+**/oe-logs/
+**/oe-workdir/
+
+# Application build directories (already covered by *build, but be explicit)
+**/build/
+
+# Temporary files
+*.tmp

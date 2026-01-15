@@ -1,0 +1,12 @@
+[Unit]
+Description=PulseAudio System Daemon
+After=sound.target
+
+[Service]
+Type=notify
+ExecStart=/usr/bin/pulseaudio --system --disallow-exit --disallow-module-loading --daemonize=no --log-target=journal
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

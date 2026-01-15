@@ -1,0 +1,45 @@
+[Unit]
+Description=Head Unit Nested Wayland Compositor (Weston client)
+After=systemd-udev-settle.service weston.service
+Requires=systemd-udev-settle.service weston.service
+StartLimitInterval=60s
+StartLimitBurst=3
+
+[Service]
+Type=simple
+# Wait for Weston socket to be available
+ExecStartPre=/bin/sleep 2
+# Clean up stale compositor socket and lock file from previous boot
+ExecStartPre=/bin/rm -f /run/user/1000/wayland-1
+ExecStartPre=/bin/rm -f /run/user/1000/wayland-1.lock
+ExecStart=/usr/bin/HU_MainApp_Compositor
+Restart=on-failure
+RestartSec=5
+
+# Clean up compositor socket on service stop (for clean restarts)
+ExecStopPost=/bin/rm -f /run/user/1000/wayland-1
+ExecStopPost=/bin/rm -f /run/user/1000/wayland-1.lock
+
+# Set proper environment for nested Wayland compositor
+# Connects to Weston at /run/wayland-0 (absolute path)
+Environment="WAYLAND_DISPLAY=/run/wayland-0"
+# Creates wayland-1 socket at /run/user/1000/wayland-1 for HU apps
+Environment="XDG_RUNTIME_DIR=/run/user/1000"
+Environment="QT_QPA_PLATFORM=wayland"
+Environment="QT_WAYLAND_DISABLE_WINDOWDECORATION=1"
+Environment="QT_AUTO_SCREEN_SCALE_FACTOR=0"
+Environment="QT_SCALE_FACTOR=1"
+Environment="QT_FONT_DPI=96"
+Environment="QT_PLUGIN_PATH=/usr/lib/plugins"
+Environment="LD_LIBRARY_PATH=/usr/lib:/usr/local/lib"
+
+# Run as weston user (same as Weston compositor)
+User=weston
+SupplementaryGroups=video
+
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=HU_Compositor
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,10 @@
+[Unit]
+Description=Mount USB Drive (%i)
+After=local-fs.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+# Use smart mounting script
+ExecStart=/usr/bin/usb-mount.sh %i
+ExecStop=/bin/sh -c 'umount /media/usb || true'
