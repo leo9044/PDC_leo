@@ -1,5 +1,0 @@
-# Udev rule for automatic USB storage mounting
-# When a USB storage device is added, trigger the mount service
-
-ACTION=="add", KERNEL=="sd[a-z][0-9]", SUBSYSTEM=="block", ENV{ID_FS_USAGE}=="filesystem", TAG+="systemd", ENV{SYSTEMD_WANTS}="usb-mount@%k.service"
-ACTION=="remove", KERNEL=="sd[a-z][0-9]", SUBSYSTEM=="block", TAG+="systemd", ENV{SYSTEMD_WANTS}="usb-unmount@%k.service"

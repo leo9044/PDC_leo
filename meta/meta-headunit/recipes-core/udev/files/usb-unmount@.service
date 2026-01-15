@@ -1,6 +1,0 @@
-[Unit]
-Description=Unmount USB Drive (%i)
-
-[Service]
-Type=oneshot
-ExecStart=/bin/sh -c 'umount /media/usb || true'
