@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <!-- Compositor QML -->
+        <file>qml/compositor.qml</file>
+    </qresource>
+</RCC>

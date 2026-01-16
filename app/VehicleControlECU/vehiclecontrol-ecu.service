@@ -1,0 +1,49 @@
+[Unit]
+Description=VehicleControl ECU Service
+Documentation=https://github.com/Changseok-Oh29/DES_Head-Unit
+After=network.target systemd-networkd.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+
+# Working directory
+WorkingDirectory=/usr/bin
+
+# Environment variables
+Environment="VSOMEIP_CONFIGURATION=/etc/vsomeip/vsomeip_ecu1.json"
+Environment="VSOMEIP_APPLICATION_NAME=VehicleControlECU"
+Environment="COMMONAPI_CONFIG=/etc/commonapi/commonapi_ecu1.ini"
+Environment="LD_LIBRARY_PATH=/usr/local/lib:/usr/lib"
+
+# Main executable
+ExecStart=/usr/bin/VehicleControlECU
+
+# Restart policy
+Restart=on-failure
+RestartSec=5s
+StartLimitInterval=200s
+StartLimitBurst=5
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=vehiclecontrol-ecu
+
+# Security settings
+# Note: Requires root for GPIO access
+# CapabilityBoundingSet=CAP_SYS_RAWIO CAP_SYS_ADMIN
+# AmbientCapabilities=CAP_SYS_RAWIO CAP_SYS_ADMIN
+# NoNewPrivileges=true
+
+# Resource limits
+LimitNOFILE=65536
+LimitNPROC=4096
+
+# Process priority
+Nice=-5
+
+[Install]
+WantedBy=multi-user.target

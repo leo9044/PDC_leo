@@ -1,0 +1,33 @@
+<RCC>
+    <qresource prefix="/">
+        <!-- Main QML Files -->
+        <file>qml/main.qml</file>
+        <file>qml/HomePage.qml</file>
+        <file>qml/MediaPage.qml</file>
+        <file>qml/VehiclePage.qml</file>
+        <file>qml/AmbientPage.qml</file>
+
+        <!-- Components -->
+        <file>qml/components/NavigationButton.qml</file>
+        <file>qml/components/QuickInfoCard.qml</file>
+        <file>qml/components/MediaButton.qml</file>
+        <file>qml/components/GearButton.qml</file>
+        <file>qml/components/InfoPanel.qml</file>
+
+        <!-- Widgets -->
+        <file>qml/widgets/MediaWidget.qml</file>
+        <file>qml/widgets/GearSelectionWidget.qml</file>
+        <file>qml/widgets/AmbientWidget.qml</file>
+
+        <!-- Image Assets -->
+        <file alias="images/car.svg">asset/car.svg</file>
+        <file alias="images/mp3.svg">asset/mp3.svg</file>
+        <file alias="images/ambient_light.svg">asset/ambient_light.svg</file>
+        <file alias="images/arrow.svg">asset/arrow.svg</file>
+        <file alias="images/refresh.svg">asset/refresh.svg</file>
+        <file alias="images/start.svg">asset/start.svg</file>
+        <file alias="images/pause.svg">asset/pause.svg</file>
+        <file alias="images/forward.svg">asset/forward.svg</file>
+        <file alias="images/backward.svg">asset/backward.svg</file>
+    </qresource>
+</RCC>
